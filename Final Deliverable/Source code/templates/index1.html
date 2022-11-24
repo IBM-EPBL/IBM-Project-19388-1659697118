@@ -1,0 +1,168 @@
+<html><head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="/static/materialize.min.css">
+    <!--Import fonts-->
+    <link rel="stylesheet" href="/static/fonts_load.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+</head>
+
+<body>
+
+<main>
+
+<div class="row">
+    <div class="center col s12">
+        <div class="card green darken-3 hoverable">
+            <div class="card-content white-text">
+                <span class="center card-title"><h3>Choose news source</h3></span>
+                <div class="row">
+                    <form action="/news" method="POST" class="col s12">
+                        <div class="row">
+                            <div class="input-field center">
+                                <div class="select-wrapper initialized"><span class="caret">▼</span>
+
+                                    </ul><select id="news-source" name="news-source" required="" class="initialized">
+                                    <option value="" disabled="" selected="">News Sources</option>
+                                    <option value="abc-news-au_ABC News (AU)">ABC News (AU)</option>
+                                    <option value="al-jazeera-english_Al Jazeera English">Al Jazeera English</option>
+                                    <option value="ars-technica_Ars Technica">Ars Technica</option>
+                                    <option value="associated-press_Associated Press">Associated Press</option>
+                                    <option value="bbc-news_BBC News">BBC News</option>
+                                    <option value="bbc-sport_BBC Sport">BBC Sport</option>
+                                    <option value="bild_Bild">Bild</option>
+                                    <option value="bloomberg_Bloomberg">Bloomberg</option>
+                                    <option value="breitbart-news_Breitbart News">Breitbart News</option>
+                                    <option value="business-insider_Business Insider">Business Insider</option>
+                                    <option value="business-insider-uk_Business Insider (UK)">Business Insider (UK)
+                                    </option>
+                                    <option value="buzzfeed_Buzzfeed">Buzzfeed</option>
+                                    <option value="cnbc_CNBC">CNBC</option>
+                                    <option value="cnn_CNN">CNN</option>
+                                    <option value="daily-mail_Daily Mail">Daily Mail</option>
+                                    <option value="der-tagesspiegel_Der Tagesspiegel">Der Tagesspiegel</option>
+                                    <option value="die-zeit_Die Zeit">Die Zeit</option>
+                                    <option value="engadget_Engadget">Engadget</option>
+                                    <option value="entertainment-weekly_Entertainment Weekly">Entertainment Weekly</option>
+                                    <option value="espn_ESPN">ESPN</option>
+                                    <option value="espn-cric-info_ESPN Cric Info">ESPN Cric Info</option>
+                                    <option value="financial-times_Financial Times">Financial Times</option>
+                                    <option value="focus_Focus">Focus</option>
+                                    <option value="football-italia_Football Italia">Football Italia</option>
+                                    <option value="fortune_Fortune">Fortune</option>
+                                    <option value="four-four-two_FourFourTwo">FourFourTwo</option>
+                                    <option value="fox-sports_Fox Sports">Fox Sports</option>
+                                    <option value="google-news_Google News">Google News</option>
+                                    <option value="gruenderszene_Gruenderszene">Gruenderszene</option>
+                                    <option value="hacker-news_Hacker News">Hacker News</option>
+                                    <option value="handelsblatt_Handelsblatt">Handelsblatt</option>
+                                    <option value="ign_IGN">IGN</option>
+                                    <option value="independent_Independent">Independent</option>
+                                    <option value="mashable_Mashable">Mashable</option>
+                                    <option value="metro_Metro">Metro</option>
+                                    <option value="mirror_Mirror">Mirror</option>
+                                    <option value="mtv-news_MTV News">MTV News</option>
+                                    <option value="mtv-news-uk_MTV News (UK)">MTV News (UK)</option>
+                                    <option value="national-geographic_National Geographic">National Geographic</option>
+                                    <option value="new-scientist_New Scientist">New Scientist</option>
+                                    <option value="newsweek_Newsweek">Newsweek</option>
+                                    <option value="new-york-magazine_New York Magazine">New York Magazine</option>
+                                    <option value="nfl-news_NFL News">NFL News</option>
+                                    <option value="polygon_Polygon">Polygon</option>
+                                    <option value="recode_Recode">Recode</option>
+                                    <option value="reddit-r-all_Reddit /r/all">Reddit /r/all</option>
+                                    <option value="reuters_Reuters">Reuters</option>
+                                    <option value="spiegel-online_Spiegel Online">Spiegel Online</option>
+                                    <option value="t3n_T3n">T3n</option>
+                                    <option value="talksport_TalkSport">TalkSport</option>
+                                    <option value="techcrunch_TechCrunch">TechCrunch</option>
+                                    <option value="techradar_TechRadar">TechRadar</option>
+                                    <option value="the-economist_The Economist">The Economist</option>
+                                    <option value="the-guardian-au_The Guardian (AU)">The Guardian (AU)</option>
+                                    <option value="the-guardian-uk_The Guardian (UK)">The Guardian (UK)</option>
+                                    <option value="the-hindu_The Hindu">The Hindu</option>
+                                    <option value="the-huffington-post_The Huffington Post">The Huffington Post</option>
+                                    <option value="the-lad-bible_The Lad Bible">The Lad Bible</option>
+                                    <option value="the-new-york-times_The New York Times">The New York Times</option>
+                                    <option value="the-next-web_The Next Web">The Next Web</option>
+                                    <option value="the-sport-bible_The Sport Bible">The Sport Bible</option>
+                                    <option value="the-telegraph_The Telegraph">The Telegraph</option>
+                                    <option value="the-times-of-india_The Times of India">The Times of India</option>
+                                    <option value="the-verge_The Verge">The Verge</option>
+                                    <option value="the-wall-street-journal_The Wall Street Journal">The Wall Street
+                                        Journal
+                                    </option>
+                                    <option value="the-washington-post_The Washington Post">The Washington Post</option>
+                                    <option value="time_Time">Time</option>
+                                    <option value="usa-today_USA Today">USA Today</option>
+                                    <option value="wired-de_Wired.de">Wired.de</option>
+                                    <option value="wirtschafts-woche_Wirtschafts Woche">Wirtschafts Woche</option>
+                                </select></div>
+                            </div>
+                        </div>
+                        <button class="btn light-green darken-2 pulsewaves-effect waves-light waves-green" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="fixed-action-btn toolbar active" data-origin-bottom="577" data-origin-left="1287" data-origin-width="56" data-open="true" style="text-align: center; width: 100%; bottom: 0px; left: 0px; transition: transform 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, background-color 0s linear 0.2s; overflow: hidden; background-color: rgb(0, 105, 92);">
+        <a class="btn-floating btn-large teal darken-3 z-depth-4 tooltipped" data-position="top" data-tooltip="Options" id="menu" data-tooltip-id="c6f8b502-4ebc-c7fb-6fcc-7ca445fcb293" style="transition: transform 0.2s ease 0s; overflow: visible;">
+            <i class="large material-icons">list</i>
+        <div class="fab-backdrop" style="background-color: rgb(0, 105, 92); transform: scale(34.15); transition: transform 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;"></div></a>
+        <ul>
+            <li class="waves-effect waves-light"></li>
+            <li class="waves-effect waves-light"></li>
+            <li class="waves-effect waves-light"><a href="/" class="tooltipped" data-position="top" data-tooltip="Go Back" data-tooltip-id="435df0c8-5776-2baf-4e42-7b57ee5a48b6" style="opacity: 1;"><i class="material-icons">arrow_back</i></a></li>
+        </ul>
+    </div>
+</main>
+
+<div class="tap-target teal darken-2" data-activates="menu">
+    <div class="tap-target-content white-text">
+        <h5>Options</h5>
+        <p>Click me for more options</p>
+    </div>
+</div>
+
+
+<footer class="page-footer teal darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">News Feed</h5>
+
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+
+                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/lakrshaag">Facebook</a></li>
+                    <li><a class="grey-text text-lighten-3" href="http://twitter.com/lakshyrag">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © newstracker
+        </div>
+    </div>
+</footer>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="/static/jquery-2.1.1.min.js"></script>
+<script src="/static/materialize.min.js"></script>
+
+
+<script src="/static/select.js"></script>
+
+
+
+<div class="material-tooltip" id="c6f8b502-4ebc-c7fb-6fcc-7ca445fcb293" style="opacity: 0; transform: translateY(0px) translateX(0px); visibility: hidden; left: 1281px; top: 478px;"><span>Options</span><div class="backdrop" style="opacity: 0; transform: scaleX(1) scaleY(1); visibility: hidden; bottom: 0px; left: 0px; border-radius: 14px 14px 0px 0px; transform-origin: 50% 100%; margin-top: 38px; margin-left: 27px;"></div></div><div class="material-tooltip" id="ad11cff3-7e19-ba5b-b9e0-030d9c315939" style="opacity: 0; transform: translateY(0px) translateX(0px); visibility: hidden; left: 196px; top: 501px;"><span>GitHub</span><div class="backdrop" style="opacity: 0; transform: scaleX(1) scaleY(1); visibility: hidden; bottom: 0px; left: 0px; border-radius: 14px 14px 0px 0px; transform-origin: 50% 100%; margin-top: 38px; margin-left: 24.5px;"></div></div><div class="material-tooltip" id="f656425c-78c0-f9ff-886d-549358672b9d" style="opacity: 0; transform: translateY(0px) translateX(0px); visibility: hidden; left: 641.828px; top: 501px;"><span>Facebook</span><div class="backdrop" style="opacity: 0; transform: scaleX(1) scaleY(1); visibility: hidden; bottom: 0px; left: 0px; border-radius: 14px 14px 0px 0px; transform-origin: 50% 100%; margin-top: 38px; margin-left: 34px;"></div></div><div class="material-tooltip" id="435df0c8-5776-2baf-4e42-7b57ee5a48b6" style="visibility: hidden; left: 1101.16px; top: 501px; transform: translateY(0px) translateX(0px); opacity: 0;"><span>Go Back</span><div class="backdrop" style="bottom: 0px; left: 0px; border-radius: 14px 14px 0px 0px; transform-origin: 50% 100%; margin-top: 38px; margin-left: 30px; visibility: hidden; opacity: 0; transform: scaleX(1) scaleY(1);"></div></div><div class="hiddendiv common"></div></body></html>
